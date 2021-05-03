@@ -1,0 +1,173 @@
+html  {
+    background: #740709;
+    font-family: IranNastaliq, serif;
+    text-align: center;
+  } 
+
+header {
+  position: relative;
+  margin: 10px 0;
+}
+
+header:after {
+  content: '';
+  width: 460px;
+  height: 15px;
+  background: url(images/intro-div.svg) no-repeat center;
+  display: inline-block;
+  text-align: center;
+  background-size: 70%;
+}
+
+h1 {
+  color: #fff;
+  font-size: 80px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2 {
+  color: #fff;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  margin: 0 0 30px;
+}
+
+.nowplaying {
+  font-size: 120px;
+  line-height: 1;
+  color: #eee;
+  text-shadow: 0 0 5rem #028ae9;
+  transition: all .07s ease;
+  min-height: 120px;
+}
+
+.keys {
+  display: block;
+  width: 100%;
+  height: 350px;
+  max-width: 1080px;   /*880 */
+  position: relative;
+  margin: 40px auto 0;
+  cursor: none;
+}
+
+.key {
+  position: relative;
+  border: 4px solid #0e0e0e;
+  border-radius: .6rem;
+  transition: all .07s ease;
+  display: block;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.key:not(.sharp) {
+  float: left;
+  width:4.76%;   /*  100/21  */
+  height: 100%;
+  background: rgba(255, 255, 255, .8);    
+}
+
+.key.sharp {
+  position: absolute;
+  width: 2.85%;    /*  4.76 * 0.6  */
+  height: 75%;
+  background: #000;
+  color: #eee;
+  top: 0;
+  z-index: 3;
+}
+
+.key[data-key="50"] {   /* 2 */
+  left: 3.4%;
+}
+
+.key[data-key="51"] {
+  left: 8%;
+}
+
+.key[data-key="53"]  {    /* 5 */
+  left: 17.6%;
+}
+
+.key[data-key="54"] {
+  left: 22.4%;
+}
+
+.key[data-key="55"] {
+  left: 27.1%;
+}
+
+.key[data-key="57"] {  /* 9 */
+  left: 36.6%;
+}
+
+.key[data-key="48"] {  /* 0 */
+  left: 41.4%;
+}
+
+
+.key[data-key="83"] {
+  left: 51%;
+}
+
+.key[data-key="68"] {  /* D */
+  left: 55.7%;
+}
+
+.key[data-key="70"] {  /* F */
+  left: 60.4%;
+}
+
+
+.key[data-key="72"] {   /* H */
+  left: 69.8%;
+}
+
+.key[data-key="74"]  {    /* J */
+  left: 74.7%;
+}
+
+.key[data-key="76"] {
+  left: 84.2%;
+}
+
+.key[data-key="186"] {
+  left: 89%;
+}
+
+.key[data-key="222"] {  /* ' */
+  left: 93.8%;
+  display:
+  position : center;
+}
+
+
+
+.playing {
+  transform: scale(.92);
+  border-color: #e9b2cc;
+  box-shadow: 0 0 1rem #028ae9;
+}
+
+.hints {
+  display: block;
+  width: 100%;
+  opacity: .4;
+  position: absolute;
+  bottom: 7px;
+  transition: opacity .3s ease-out;
+  font-size: 20px;
+}
+
+.keys:hover .hints {
+  opacity: .9;
+}
+
+.other{
+  font-family: 'Microsoft Sans Serif' ,serif ;
+  font-size: 33px
+}
